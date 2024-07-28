@@ -5,8 +5,6 @@ import openai
 # Create your views here.
 
 def home(request):
-    
-    #API_KEY = 'sk-proj-E7N3DOPa3UdqppW8XiyYT3BlbkFJxc9TR9AsxbLh1qP1RnG8'
 
     lang_list = ['c', 'clike', 'cpp', 'csharp', 'css', 'dart', 'django', 'go', 'html', 'java', 'javascript', 'markup', 'markup-templating', 'matlab', 'mongodb', 'objectivec', 'perl', 'php', 'powershell', 'python', 'r', 'regex', 'ruby', 'rust', 'sas', 'sql', 'typescript', 'yaml']
     
@@ -21,7 +19,7 @@ def home(request):
         
         else:
             #openAI keys
-            openai.api_key = "sk-proj-DNldBKqGgI5L5uSVjZX7T3BlbkFJ56GvdCLvXNUqCqexXkIL"
+            openai.api_key = "Enter_your_api_key"
             
             #openAi instance
             openai.Model.list()
